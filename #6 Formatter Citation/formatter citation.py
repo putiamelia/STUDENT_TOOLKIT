@@ -1,32 +1,34 @@
-def citation_menu(self):
-    """Menu Formatter Sitasi"""
-    while True:
-        self.clear_screen()
-        print("=" * 50)
-        print("FORMATTER SITASI (DAFTAR PUSTAKA)")
-        print("=" * 50)
-        print("1. Format Sitasi Buku")
-        print("2. Format Sitasi Jurnal")
-        print("3. Format Sitasi Website")
-        print("4. Format Sitasi Artikel Online")
-        print("0. Kembali")
-        print("=" * 50)
-        
-        choice = input("Pilih menu: ")
-        
-        if choice == '1':
-            self.format_book_citation()
-        elif choice == '2':
-            self.format_journal_citation()
-        elif choice == '3':
-            self.format_website_citation()
-        elif choice == '4':
-            self.format_online_article_citation()
-        elif choice == '0':
-            break
+# citation_module.py
+
+class CitationFeature:
     
-def format_book_citation(self):
-        """Format sitasi buku (APA Style)"""
+    def citation_menu(self):
+        while True:
+            self.clear_screen()
+            print("=" * 50)
+            print("FORMATTER SITASI (DAFTAR PUSTAKA)")
+            print("=" * 50)
+            print("1. Format Sitasi Buku")
+            print("2. Format Sitasi Jurnal")
+            print("3. Format Sitasi Website")
+            print("4. Format Sitasi Artikel Online")
+            print("0. Kembali")
+            print("=" * 50)
+            
+            choice = input("Pilih menu: ")
+            
+            if choice == '1':
+                self.format_book_citation()
+            elif choice == '2':
+                self.format_journal_citation()
+            elif choice == '3':
+                self.format_website_citation()
+            elif choice == '4':
+                self.format_online_article_citation()
+            elif choice == '0':
+                break
+    
+    def format_book_citation(self):
         self.clear_screen()
         print("=== FORMAT SITASI BUKU (APA Style) ===\n")
         
@@ -46,8 +48,7 @@ def format_book_citation(self):
         
         input("Tekan Enter untuk lanjut...")
     
-def format_journal_citation(self):
-        """Format sitasi jurnal (APA Style)"""
+    def format_journal_citation(self):
         self.clear_screen()
         print("=== FORMAT SITASI JURNAL (APA Style) ===\n")
         
@@ -69,8 +70,7 @@ def format_journal_citation(self):
         
         input("Tekan Enter untuk lanjut...")
     
-def format_website_citation(self):
-        """Format sitasi website (APA Style)"""
+    def format_website_citation(self):
         self.clear_screen()
         print("=== FORMAT SITASI WEBSITE (APA Style) ===\n")
         
@@ -90,8 +90,7 @@ def format_website_citation(self):
         
         input("Tekan Enter untuk lanjut...")
     
-def format_online_article_citation(self):
-        """Format sitasi artikel online (APA Style)"""
+    def format_online_article_citation(self):
         self.clear_screen()
         print("=== FORMAT SITASI ARTIKEL ONLINE (APA Style) ===\n")
         
